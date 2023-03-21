@@ -5,6 +5,8 @@ import os
 from sklearn.model_selection import train_test_split
 import pickle
 
+# TODO add denoising
+
 CATEGORIES = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "add", "dec", "eq", "div", "mul", "sub", "x", "y", "z"]
 DATADIR = "C:/Users/realt/Documents/Datasets/HandwrittenMathSymbols/dataset/"
 tempImgLink = "C:/Users/realt/Documents/Datasets/HandwrittenMathSymbols/dataset/0/0CdBlhLw.png"
