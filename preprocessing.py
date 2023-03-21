@@ -10,7 +10,7 @@ import pickle
 CATEGORIES = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "add", "dec", "eq", "div", "mul", "sub", "x", "y", "z"]
 DATADIR = "C:/Users/realt/Documents/Datasets/HandwrittenMathSymbols/dataset/"
 tempImgLink = "C:/Users/realt/Documents/Datasets/HandwrittenMathSymbols/dataset/0/0CdBlhLw.png"
-img_size = (256, 256)
+img_size = (64, 64)
 
 train_data = []
 train_labels = []
