@@ -5,9 +5,9 @@ import os
 from sklearn.model_selection import train_test_split
 import pickle
 
-# TODO add denoising
+# TODO Remove X Y Z categoty, it mixes up the
 
-CATEGORIES = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "add", "dec", "eq", "div", "mul", "sub", "x", "y", "z"]
+CATEGORIES = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "add", "dec", "eq", "div", "mul", "sub", "none"]
 DATADIR = "C:/Users/realt/Documents/Datasets/HandwrittenMathSymbols/dataset/"
 tempImgLink = "C:/Users/realt/Documents/Datasets/HandwrittenMathSymbols/dataset/0/0CdBlhLw.png"
 img_size = (64, 64)
@@ -33,6 +33,8 @@ def preprocessData():
                 resized_image = temp2.resize(img_size, resample=Image.BILINEAR)
                 numpy_image = asarray(resized_image)
                 resized_images.append(numpy_image)
+
+
         X_train, X_rem = train_test_split(resized_images, train_size=0.7)
         X_test, X_validation = train_test_split(X_rem, train_size=0.5)
 
